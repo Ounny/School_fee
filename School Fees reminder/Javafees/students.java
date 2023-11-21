@@ -4,10 +4,10 @@ public class students
     private int studentsID;
     private String name;
     private String username;
-    private String password;
+    private  int password;
 
 // Constructor
-    public students(int studentsID, String name, String username, String password) 
+    public students(int studentsID, String name, String username, int password) 
     {
         this.studentsID = studentsID;
         this.name = name;
@@ -30,7 +30,7 @@ public class students
         return username;
     }
 
-    public String password() 
+    public int password() 
     {
         return password;
     }
@@ -50,7 +50,7 @@ public class students
         this.username = username;
     }
 
-    public void setpassword(String password) 
+    public void setpassword(int password) 
     {
         this.password = password;
     }
