@@ -3,11 +3,15 @@ package Javafees;
 public class schoolpaymentReminder 
 {
     private String name;
+    private String title;
+    private String description;
     private String paymentRecord;
     // Constructor
-    public schoolpaymentReminder(String name, String paymentrecord)
+    public schoolpaymentReminder(String name,String title, String description, String paymentrecord)
     {
         this.name=name;
+        this.title=name;
+        this.description=description;
         this.paymentRecord=paymentrecord;
     }
     //Getter and Setter
@@ -15,9 +19,22 @@ public class schoolpaymentReminder
     {
         return this.name;
     }
-    public void setname(String name)
+    public String titlle()
     {
-        this.name=name;
+        return this.title;
+    }
+    public void setname(String title)
+    {
+        this.title=title;
+    }
+    }
+    public String description()
+    {
+        return this.description;
+    }
+    public void setname(String description)
+    {
+        this.description=description;
     }
      public String getpaymentrecord()
     {
