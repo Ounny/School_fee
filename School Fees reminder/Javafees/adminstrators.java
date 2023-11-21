@@ -3,10 +3,10 @@ public class adminstrators
 {
     private int admin_id;
     private String name;
-    private String passsowrd;
+    private int passsowrd;
 
 // Constructor
-    public adminstrators(int admin_id, String name, String password) 
+    public adminstrators(int admin_id, String name, int password) 
     {
         this.admin_id = admin_id;
         this.name = name;
@@ -21,7 +21,7 @@ public class adminstrators
     {
         return name;
     }
-    public String getpassword() 
+    public int getpassword() 
     {
         return passsowrd;
     }
@@ -34,7 +34,7 @@ public class adminstrators
     {
         this.name = name;
     }
-    public void setpassword(String password) 
+    public void setpassword(int password) 
     {
         this.passsowrd = password;
     }
