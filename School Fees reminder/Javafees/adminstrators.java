@@ -1,50 +1,41 @@
 package Javafees;
-public class schoolpaymentReminder {
+public class adminstrators 
+{
+    private int admin_id;
     private String name;
-    private String title;
-    private String description;
-    private String paymentRecord;
+    private String passsowrd;
 
-    // Constructor
-    public schoolpaymentReminder(String name, String title, String description, String paymentrecord) 
+// Constructor
+    public adminstrators(int admin_id, String name, String password) 
     {
+        this.admin_id = admin_id;
         this.name = name;
-        this.title = name;
-        this.description = description;
-        this.paymentRecord = paymentrecord;
+        this.passsowrd = password;
     }
-    // Getter 
+// Getter
+    public int getAdminID() 
+    {
+        return admin_id;
+    }
     public String getName() 
     {
         return name;
     }
-    public String getTitle() 
+    public String getpassword() 
     {
-        return title;
+        return passsowrd;
     }
-    public String getDescription() 
+// Setter
+    public void setAdminID(int admin_id) 
     {
-        return description;
+        this.admin_id = admin_id;
     }
-    public String getPaymentRecord() 
-    {
-        return paymentRecord;
-    }
-    // Setter 
     public void setName(String name) 
     {
         this.name = name;
     }
-    public void setTitle(String title) 
+    public void setpassword(String password) 
     {
-        this.title = title;
-    }
-    public void setDescription(String description) 
-    {
-        this.description = description;
-    }
-    public void setPaymentRecord(String paymentRecord) 
-    {
-        this.paymentRecord = paymentRecord;
+        this.passsowrd = password;
     }
 }
