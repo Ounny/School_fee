@@ -50,7 +50,7 @@ public class students
         this.username = username;
     }
 
-    public void setpassword(int password) 
+    public void setpassword(String password) 
     {
         this.password = password;
     }
