@@ -41,7 +41,7 @@ public class Invoice
     {
         this.amount = amount;
     }
-    public boolean isPaymentStatus() 
+    public boolean getPaymentStatus() 
     {
         return paymentStatus;
     }   
